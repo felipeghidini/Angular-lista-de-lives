@@ -15,6 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { SharedPipe } from './shared.pipe';
 import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatDialogModule } from '@angular/material/dialog';
+import { LiveFormDialogComponent } from './views/home/live-form-dialog/live-form-dialog.component';
 
 
 
@@ -24,7 +26,8 @@ import { MatChipsModule } from '@angular/material/chips';
     HomeComponent,
     LiveListComponent,
     SharedPipe,
-    LocalDateTimePipe
+    LocalDateTimePipe,
+    LiveFormDialogComponent
   ],
   imports: [
     HttpClientModule,
@@ -36,7 +39,8 @@ import { MatChipsModule } from '@angular/material/chips';
     MatButtonModule,
     MatTabsModule,
     MatCardModule,
-    MatChipsModule
+    MatChipsModule,
+    MatDialogModule
   ],
   providers: [
     LocalDateTimePipe
